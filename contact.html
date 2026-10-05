@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact CodeCraft Innovations and Anshika Verma" />
+  <title>Contact | CodeCraft Innovations</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a class="logo" href="index.html">CodeCraft<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">CONNECT WITH OUR TEAM</p>
+        <h1>Let's build something exceptional together.</h1>
+        <p>Send an inquiry regarding project roadmaps, web development consultations, or custom website builds. CodeCraft Innovations is ready to help.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p>Our lead developer and architect, Anshika Verma, is available for technical discussions, business queries, and collaborative projects.</p>
+          <div class="contact-details">
+            <p><strong>Firm:</strong> CodeCraft Innovations</p>
+            <p><strong>Lead Architect:</strong> Anshika Verma</p>
+            <p><strong>Direct Email:</strong> anshika.verma@example.com</p>
+            <p><strong>Hub Location:</strong> Lucknow, Uttar Pradesh, India</p>
+            <p><strong>Status:</strong> Available for Client Projects & Opportunities</p>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name *</label>
+            <input id="name" name="name" type="text" placeholder="Enter your full name" required />
+            <small class="error" id="nameError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Work Email *</label>
+            <input id="email" name="email" type="email" placeholder="name@company.com" required />
+            <small class="error" id="emailError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Project Scope or Message *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Outline your project requirements or inquiries..." required></textarea>
+            <small class="error" id="messageError"></small>
+          </div>
+
+          <button class="btn primary" type="submit">Transmit Message</button>
+          <p id="formStatus" class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© 2026 CodeCraft Innovations. Engineered by Anshika Verma.</p>
+      <a href="index.html">Back to Home →</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
